@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in).useDelimiter("\n");
+
 //        int i = 5;
 //        while(i <= 15 ){
 //            System.out.print(i + "\n");
@@ -40,19 +44,37 @@ public class ControlFlowExercises {
 //            System.out.print(a + "\n");
 //        }
 
-        for(int i = 1; i <= 100; i++){
-                if(i % 3 == 0 && i % 5 == 0){
-                    System.out.println("FizzBuzz");
-                }
-                else if(i % 3 == 0){
-                    System.out.println("Fizz");
-                }
-                else if(i % 5 == 0){
-                    System.out.println("Buzz");
-                }
-                else{
-                    System.out.println(i);
-                }
-            }
+//        for(int i = 1; i <= 100; i++){
+//                if(i % 3 == 0 && i % 5 == 0){
+//                    System.out.println("FizzBuzz");
+//                }
+//                else if(i % 3 == 0){
+//                    System.out.println("Fizz");
+//                }
+//                else if(i % 5 == 0){
+//                    System.out.println("Buzz");
+//                }
+//                else{
+//                    System.out.println(i);
+//                }
+////            }
+//            System.out.println("What number would you like to go up to?");
+//            int i = scanner.nextInt();
+//                System.out.println("number   |Squared   |Cubed");
+//                System.out.println("-----    |-----     |-----");
+//                System.out.println(i + "        |"+ (i*i) + "         |" + i*i*i);
+//                System.out.println("Would you like to continue?");
+//                String x = scanner.next();
+//                if(x.equals("yes")){
+//                    System.out.println("number   |Squared   |Cubed");
+//                    System.out.println("-----    |-----     |-----");
+//                    System.out.println(i + "        |"+ (i*i) + "         |" + i*i*i);
+//                }
+//                else if(x.equals("no")){
+//                    System.out.println("number   |Squared   |Cubed");
+//                    System.out.println("-----    |-----     |-----");
+//                    System.out.println(i + "        |"+ (i*i) + "         |" + i*i*i);
+//                }
+
         }
     }
