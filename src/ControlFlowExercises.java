@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ControlFlowExercises {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in).useDelimiter("\n");
 
 //        int i = 5;
@@ -58,23 +58,26 @@ public class ControlFlowExercises {
 //                    System.out.println(i);
 //                }
 ////            }
-//            System.out.println("What number would you like to go up to?");
-//            int i = scanner.nextInt();
-//                System.out.println("number   |Squared   |Cubed");
-//                System.out.println("-----    |-----     |-----");
-//                System.out.println(i + "        |"+ (i*i) + "         |" + i*i*i);
-//                System.out.println("Would you like to continue?");
-//                String x = scanner.next();
-//                if(x.equals("yes")){
-//                    System.out.println("number   |Squared   |Cubed");
-//                    System.out.println("-----    |-----     |-----");
-//                    System.out.println(i + "        |"+ (i*i) + "         |" + i*i*i);
-//                }
-//                else if(x.equals("no")){
-//                    System.out.println("number   |Squared   |Cubed");
-//                    System.out.println("-----    |-----     |-----");
-//                    System.out.println(i + "        |"+ (i*i) + "         |" + i*i*i);
-//                }
+//        System.out.println("What number would you like to go up to?");
+//        int input = scanner.nextInt();
+//        System.out.println("number   |Squared   |Cubed");
+//        System.out.println("-----    |-----     |-----");
+//        for (int i = 1; i <= input; i++) {
+//            System.out.println(i + "        |" + (i * i) + "        |" + i * i * i);
+//        }
+
+
+//        System.out.println("Would you like to continue?");
+//        String x = scanner.next();
+//        if (x.equals("yes")) {
+//            System.out.println("number   |Squared   |Cubed");
+//            System.out.println("-----    |-----     |-----");
+//            System.out.println(i + "        |" + (i * i) + "         |" + i * i * i);
+//        } else if (x.equals("no")) {
+//            System.out.println("number   |Squared   |Cubed");
+//            System.out.println("-----    |-----     |-----");
+//            System.out.println(i + "        |" + (i * i) + "         |" + i * i * i);
+//        }
 
                  System.out.println("Enter in a grade between 0 and 100");
                  int grade = scanner.nextInt();
@@ -103,5 +106,5 @@ public class ControlFlowExercises {
                      System.out.println("The grade you entered is a F-");
                  }
 
-        }
     }
+}
