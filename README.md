@@ -1,1 +1,3 @@
 # codeup-java-exercises
+
+notes
