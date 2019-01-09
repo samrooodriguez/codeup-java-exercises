@@ -6,8 +6,13 @@ public class MethodsExercises {
     public static int subtraction(int numberA, int numberB){
         return numberA - numberB;
     }
-    public static int multiplication(int numberA, int numberB){
-        return numberA * numberB;
+    public static int multiplication(int a, int b){
+        int total = 0;
+
+        for(int x = 0; x < a; x++){
+            total += b;
+        }
+        return total;
     }
     public static int division(int numberA, int numberB){
         return numberA / numberB;
