@@ -79,23 +79,11 @@ public class MethodsPractice {
     }
 
     public static boolean isEven(int i) {
-        boolean bool;
-        if (i % 2 == 0) {
-            bool = true;
-        } else {
-            bool = false;
-        }
-        return bool;
+        return i % 2 == 0;
     }
 
     public static boolean isOdd(int i) {
-        boolean bool;
-        if (i % 2 == 1) {
-            bool = true;
-        } else {
-            bool = false;
-        }
-        return bool;
+        return i % 2 == 1;
     }
     public static int countOdds(int start, int end) {
         int output = 0;
@@ -107,16 +95,40 @@ public class MethodsPractice {
         System.out.format("%d %n", output);
         return output;
     }
+    public static int countEvens(int start, int end) {
+        int output = 0;
+        for (int i = start; i <= end; i++) {
+            if (isEven(i)) {
+                output += 1;
+            }
+        }
+        System.out.format("%d %n", output);
+        return output;
+    }
+    public static boolean isVowel(String i) {
+        if(i.length() > 1){
+            return false;
+        }
+        return i.equalsIgnoreCase("a") ||
+         i.equalsIgnoreCase("e") ||
+         i.equalsIgnoreCase("i") ||
+         i.equalsIgnoreCase("o") ||
+         i.equalsIgnoreCase("u");
+     }
+
     public static void main(String[] args) {
-//            firstChar();
-//            secondChar();
-//            thirdChar();
-//            lastChar();
-//            secondToLastChar();
-//            userWantsToContinue();
-//            isEven(10);
-//            isOdd(9);
-//            countOdds(1, 10);
+//        firstChar();
+//        secondChar();
+//        thirdChar();
+//        lastChar();
+//        secondToLastChar();
+//        userWantsToContinue();
+//        System.out.println(isOdd(7));
+//        System.out.println(isEven(4));
+//        countOdds(1, 10);
+//        countEvens(0,20);
+//        System.out.println(isVowel("a"));
+
     }
 }
 
