@@ -142,19 +142,19 @@ public class MethodsPractice {
     }
 
     public static void main(String[] args) {
-//        firstChar();
-//        secondChar();
-//        thirdChar();
-//        lastChar();
-//        secondToLastChar();
-//        userWantsToContinue();
-//        System.out.println(isOdd(7));
-//        System.out.println(isEven(4));
-//        countOdds(1, 10);
-//        countEvens(0,20);
-//        System.out.println(isVowel("a"));
-//        System.out.println(hasVowels("This string has vowels"));
-//        System.out.println(countVowels("cat, dog"));
+        firstChar();
+        secondChar();
+        thirdChar();
+        lastChar();
+        secondToLastChar();
+        userWantsToContinue();
+        System.out.println(isOdd(7));
+        System.out.println(isEven(4));
+        countOdds(1, 10);
+        countEvens(0,20);
+        System.out.println(isVowel("a"));
+        System.out.println(hasVowels("This string has vowels"));
+        System.out.println(countVowels("cat, dog"));
         fizzBuzz();
 
     }
