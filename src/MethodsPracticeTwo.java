@@ -1,5 +1,3 @@
-//Write a method named secondLongestRun that accepts a string of 1s and 0s and returns an integer that specifies the length of the second longest run of consecutive numbers. Example secondLongestRun("111001") returns 2 because the two 0s in a row are the second longest run.
-//
 //Write a method named magic8ball that prompts the user to input a question. If the user inputs a string that does not have a question mark at the end, then start the method over again. When answering the magic 8 ball randomly returns one of a set of string options like the following:
 //"All signs point to yes", "The future is cloudy. Ask again", "Very doubtful", "Outlook not so good.", "Don't count on it.", "You may rely on it!", "Ask again later."
 //
@@ -50,7 +48,9 @@ public class MethodsPracticeTwo {
         }
         return zeroCount;
     }
-    //Write a method named analyzeRandomWalk that accepts a string containing ones and zeroes and prints out the number of ones and the number of zeroes. This method is void because it does not return anything. Example: analyzeRandomWalk("11000") should print "There are 2 ones and 3 zeroes".
+    //Write a method named analyzeRandomWalk that accepts a string containing ones and zeroes and prints out
+    // the number of ones and the number of zeroes. This method is void because it does not return anything.
+    // Example: analyzeRandomWalk("11000") should print "There are 2 ones and 3 zeroes".
     public static void analyzeRandomWalk(String input){
         int zeroCount = 0;
         int oneCount = 0;
@@ -65,6 +65,14 @@ public class MethodsPracticeTwo {
         System.out.format("There are %d zeros and %d ones",zeroCount,oneCount);
     }
 
+    //Write a method named secondLongestRun that accepts a string of 1s and 0s and returns an integer that specifies
+    // the length of the second longest run of consecutive numbers.
+    // Example secondLongestRun("111001") returns 2 because the two 0s in a row are the second longest run.
+    public static void secondLongestRun(String input){
+
+
+
+    }
 
 
     public static void main(String[] args) {
