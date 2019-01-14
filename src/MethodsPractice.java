@@ -1,15 +1,3 @@
-// Write a method named countOdds(start, end) that returns an integer containing the integer that is the count of all odd numbers between the start and the end input integers.
-//
-// Write a method named countEvens(start, end) that returns an integer containing the integer that is the count of all even numbers between the start and the end input integers.
-//
-// Write a method named isVowel() that accepts a String input of length 1 and returns a boolean if that string is a vowel other than "y".
-//
-// Write a method named hasVowels() that accepts a string of any length and returns a boolean if there are any vowels in that string.
-//
-// Write a method named countVowels() that accepts a string of any length and returns an integer count of the number of vowels in the provided input String.
-//
-// Write a solution to FizzBuzz using recursion instead of a loop.
-//
 // Write a method named isPrime() that that accepts in an integer number and returns a boolean if the number is evenly divisible only by either 1 or the number itself.
 //
 //Write a method named getTwentyPrimes() that returns a string containing the first 20 prime numbers, each separated by a comma. Output:
@@ -85,6 +73,7 @@ public class MethodsPractice {
     public static boolean isOdd(int i) {
         return i % 2 == 1;
     }
+
     public static int countOdds(int start, int end) {
         int output = 0;
         for (int i = start; i <= end; i++) {
@@ -95,6 +84,7 @@ public class MethodsPractice {
         System.out.format("%d %n", output);
         return output;
     }
+
     public static int countEvens(int start, int end) {
         int output = 0;
         for (int i = start; i <= end; i++) {
@@ -105,16 +95,51 @@ public class MethodsPractice {
         System.out.format("%d %n", output);
         return output;
     }
+
     public static boolean isVowel(String i) {
-        if(i.length() > 1){
+        if (i.length() > 1) {
             return false;
         }
         return i.equalsIgnoreCase("a") ||
-         i.equalsIgnoreCase("e") ||
-         i.equalsIgnoreCase("i") ||
-         i.equalsIgnoreCase("o") ||
-         i.equalsIgnoreCase("u");
-     }
+                i.equalsIgnoreCase("e") ||
+                i.equalsIgnoreCase("i") ||
+                i.equalsIgnoreCase("o") ||
+                i.equalsIgnoreCase("u");
+    }
+
+    public static boolean hasVowels(String input) {
+        for (int i = 0; i <= input.length(); i++) {
+            if (input.contains("a") || input.contains("e") || input.contains("i") || input.contains("o") || input.contains("u")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static int countVowels(String input) {
+        int vowelCount = 0;
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == 'a' || input.charAt(i) == 'e' || input.charAt(i) == 'i' || input.charAt(i) == 'o' || input.charAt(i) == 'u') {
+                vowelCount++;
+            }
+        }
+        return vowelCount;
+    }
+
+    public static void fizzBuzz() {
+
+        for (int i = 1; i < 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
+    }
 
     public static void main(String[] args) {
 //        firstChar();
@@ -128,6 +153,9 @@ public class MethodsPractice {
 //        countOdds(1, 10);
 //        countEvens(0,20);
 //        System.out.println(isVowel("a"));
+//        System.out.println(hasVowels("This string has vowels"));
+//        System.out.println(countVowels("cat, dog"));
+        fizzBuzz();
 
     }
 }
