@@ -25,11 +25,12 @@ public class ServerNameGenerator {
             "neat",
             "tasty"
     };
+
     public static void main(String[] args) {
         Random rnd = new Random();
         System.out.println(
-        adjectives[rnd.nextInt(adjectives.length - 1)]
-        + " " +
-        nouns[rnd.nextInt(nouns.length - 1)]);
+                adjectives[rnd.nextInt(adjectives.length - 1)]
+                        + " " +
+                        nouns[rnd.nextInt(nouns.length - 1)]);
     }
 }
