@@ -17,7 +17,7 @@ public class ServerNameGenerator {
             "unable",
             "loving",
             "secretive",
-            "five",
+            "dedicated",
             "ruddy",
             "delicious",
             "selective",
@@ -25,7 +25,6 @@ public class ServerNameGenerator {
             "neat",
             "tasty"
     };
-
     public static void main(String[] args) {
         Random rnd = new Random();
         System.out.println(
@@ -33,5 +32,4 @@ public class ServerNameGenerator {
         + " " +
         nouns[rnd.nextInt(nouns.length - 1)]);
     }
-
 }
