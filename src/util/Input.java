@@ -17,7 +17,19 @@ public class Input {
         return yesNo();
     }
 
-    public int getInt(int min, int max){
+    public int getInt() {
+        String result = scanner.nextLine();
+        int parsedInt = 0;
+        try{
+            parsedInt = Integer.valueOf(result);
+        }catch(NumberFormatException ex){
+            System.out.println("That is not a number");
+            return getInt();
+        }
+        return parsedInt;
+    }
+
+    public int getMinMax(int min, int max){
         System.out.println("Enter in an integer within the min and max");
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();
@@ -26,10 +38,10 @@ public class Input {
             return userInput;
         }
         System.out.println("wrong");
-        return getInt(min,max);
+        return getMinMax(min,max);
     }
 
-    public double getDouble(double min, double max){
+    public double getDoubleMinMax(double min, double max){
         System.out.println("Enter in a decimal point number within range");
         Scanner scanner = new Scanner(System.in);
         double userInput = scanner.nextDouble();
@@ -38,8 +50,18 @@ public class Input {
             return userInput;
         }
         System.out.println("Double wrong");
-        return getDouble(min,max);
+        return getDoubleMinMax(min,max);
     }
 
-
+    public double getDouble(){
+        String result = scanner.nextLine();
+        double parsedDouble = 0.0;
+        try{
+            parsedDouble = Double.valueOf(result);
+        }catch(NumberFormatException ex){
+            System.out.println("That is not a double");
+            return getDouble();
+        }
+        return parsedDouble;
+    }
 }
